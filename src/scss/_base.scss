@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+$text-color: #b1bde4;
+$black-primary: #282828;
+$black-secondary: #121417;
+$border-color: #4c4c4c;
+$sidebar-color:rgb(33,33,33);
+$mainbackground:rgb(24,24,24);
+
+$breakpoint-medium: 1224px;
+$breakpoint-small: 520px;
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Roboto", sans-serif;
+}
+p {
+   margin: 0;
+}
+
+body {
+   background: $black-primary;
+   background-attachment: fixed;
+   color: $text-color;
+   letter-spacing: 0.1px;
+}
+::-webkit-scrollbar {
+   width: 0px;
+   /* Remove scrollbar space */
+   background: transparent;
+   /* Optional: just make scrollbar invisible */
+}
+
+a {
+   text-decoration: none;
+
+   &:hover {
+      text-decoration: none;
+   }
+}
+
+@mixin line-clamp($number) {
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: $number;
+   -webkit-box-orient: vertical;
+}
+
+@mixin channel-icon {
+   width: 36px;
+   height: 36px;
+   object-fit: contain;
+   margin-right: 1rem;
+   background-color: #aaa;
+   border-radius: 50%;
+}
+
+@mixin duration {
+   padding: 0.1rem 0.2rem;
+   background: #000000e3;
+   border-radius: 3px;
+
+   position: absolute;
+   bottom: 0.3rem;
+   right: 1.2rem;
+
+   font-size: 0.9rem;
+   font-weight: 500;
+}

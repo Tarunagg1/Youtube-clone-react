@@ -1,0 +1,7 @@
+@import "../scss/base";
+
+.app__container {
+  display: flex;
+  background: $mainbackground;
+  margin-top: 10vh;
+}
